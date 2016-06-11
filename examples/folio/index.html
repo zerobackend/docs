@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Folio - ZeroBackend</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">ZeroBackend</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Case Study <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../case-study/eshop/">Eshop</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../case-study/blog/">Blog</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../blog/">Blog</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="./">Folio</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a rel="next" href="../blog/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#project">Project</a></li>
+        
+    
+        <li class="main "><a href="#category">Category</a></li>
+        
+    
+        <li class="main "><a href="#tag">Tag</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<p>Here is an example of simple <code>folio</code> configuration entity files</p>
+<h1 id="project">Project</h1>
+<pre><code>{
+  &quot;label&quot;: &quot;Project&quot;,
+  &quot;name&quot;: &quot;project&quot;,
+  &quot;fields&quot;: [
+    {
+      &quot;label&quot;: &quot;Project title&quot;,
+      &quot;name&quot;: &quot;title&quot;,
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;string&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Website&quot;,
+      &quot;name&quot;: &quot;website&quot;,
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;none&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Client&quot;,
+      &quot;name&quot;: &quot;client&quot;,
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;string&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Description&quot;,
+      &quot;name&quot;: &quot;description&quot;,
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;none&quot;,
+        &quot;show&quot;: &quot;text&quot;,
+        &quot;create&quot;: &quot;text&quot;,
+        &quot;edit&quot;: &quot;text&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Project release date&quot;,
+      &quot;name&quot;: &quot;release_date&quot;,
+      &quot;dataType&quot;: &quot;date&quot;,
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;none&quot;,
+        &quot;show&quot;: &quot;date&quot;,
+        &quot;create&quot;: &quot;date&quot;,
+        &quot;edit&quot;: &quot;date&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Categories&quot;,
+      &quot;name&quot;: &quot;categories&quot;,
+
+      &quot;dataType&quot;: &quot;reference_many&quot;,
+      &quot;dataRefName&quot;: &quot;project_x_category&quot;,
+      &quot;dataRefEntity&quot;: &quot;category&quot;,
+      &quot;dataRefField&quot;: &quot;title&quot;,
+
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;none&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Tags&quot;,
+      &quot;name&quot;: &quot;tags&quot;,
+
+      &quot;dataType&quot;: &quot;reference_many&quot;,
+      &quot;dataRefName&quot;: &quot;project_x_tag&quot;,
+      &quot;dataRefEntity&quot;: &quot;tag&quot;,
+      &quot;dataRefField&quot;: &quot;title&quot;,
+
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;none&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Cover&quot;,
+      &quot;name&quot;: &quot;cover_image_url&quot;,
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;none&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Vimeo URL&quot;,
+      &quot;name&quot;: &quot;cover_vimeo_url&quot;,
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;none&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Youtube URL&quot;,
+      &quot;name&quot;: &quot;cover_youtube_url&quot;,
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;none&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+
+<h1 id="category">Category</h1>
+<pre><code>{
+  &quot;label&quot;: &quot;Category&quot;,
+  &quot;name&quot;: &quot;category&quot;,
+  &quot;fields&quot;: [
+    {
+      &quot;label&quot;: &quot;Category title&quot;,
+      &quot;name&quot;: &quot;title&quot;,
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;string&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Projects&quot;,
+      &quot;name&quot;: &quot;projects&quot;,
+
+      &quot;dataType&quot;: &quot;reference_many&quot;,
+      &quot;dataRefName&quot;: &quot;project_x_category&quot;,
+      &quot;dataRefEntity&quot;: &quot;project&quot;,
+      &quot;dataRefField&quot;: &quot;title&quot;,
+
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;none&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+
+<h1 id="tag">Tag</h1>
+<pre><code>{
+  &quot;label&quot;: &quot;Tag&quot;,
+  &quot;name&quot;: &quot;tag&quot;,
+  &quot;fields&quot;: [
+    {
+      &quot;label&quot;: &quot;Tag&quot;,
+      &quot;name&quot;: &quot;title&quot;,
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;string&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    },
+    {
+      &quot;label&quot;: &quot;Projects&quot;,
+      &quot;name&quot;: &quot;projects&quot;,
+
+      &quot;dataType&quot;: &quot;reference_many&quot;,
+      &quot;dataRefName&quot;: &quot;project_x_tag&quot;,
+      &quot;dataRefEntity&quot;: &quot;project&quot;,
+      &quot;dataRefField&quot;: &quot;title&quot;,
+
+      &quot;displayType&quot;: {
+        &quot;list&quot;: &quot;none&quot;,
+        &quot;show&quot;: &quot;string&quot;,
+        &quot;create&quot;: &quot;string&quot;,
+        &quot;edit&quot;: &quot;string&quot;
+      }
+    }
+  ]
+}
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center>Copyright &copy; 2016 ZeroBackend (<a href="https://github.com/dchapkine">@dchapkine</a>)</center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script src="../../js/base.js"></script>
+    </body>
+</html>
