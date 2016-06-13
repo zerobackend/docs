@@ -64,14 +64,26 @@ Here is an example of simple `folio` configuration entity files
       }
     },
     {
+      "label": "Status",
+      "name": "status",
+      "dataType": "reference",
+      "dataRefName": "project_x_status",
+      "dataRefEntity": "status",
+      "dataRefField": "title",
+      "displayType": {
+        "list": "none",
+        "show": "string",
+        "create": "string",
+        "edit": "choices"
+      }
+    },
+    {
       "label": "Categories",
       "name": "categories",
-      
       "dataType": "reference_many",
       "dataRefName": "project_x_category",
       "dataRefEntity": "category",
       "dataRefField": "title",
-
       "displayType": {
         "list": "none",
         "show": "string",
@@ -82,12 +94,10 @@ Here is an example of simple `folio` configuration entity files
     {
       "label": "Tags",
       "name": "tags",
-      
       "dataType": "reference_many",
       "dataRefName": "project_x_tag",
       "dataRefEntity": "tag",
       "dataRefField": "title",
-
       "displayType": {
         "list": "none",
         "show": "string",
@@ -154,12 +164,10 @@ Here is an example of simple `folio` configuration entity files
     {
       "label": "Projects",
       "name": "projects",
-
       "dataType": "reference_many",
       "dataRefName": "project_x_category",
       "dataRefEntity": "project",
       "dataRefField": "title",
-      
       "displayType": {
         "list": "none",
         "show": "string",
@@ -194,12 +202,10 @@ Here is an example of simple `folio` configuration entity files
     {
       "label": "Projects",
       "name": "projects",
-
       "dataType": "reference_many",
       "dataRefName": "project_x_tag",
       "dataRefEntity": "project",
       "dataRefField": "title",
-      
       "displayType": {
         "list": "none",
         "show": "string",
@@ -212,4 +218,43 @@ Here is an example of simple `folio` configuration entity files
 ```
 
 
+
+
+# Status
+
+Used to specify project status
+
+```
+{
+  "label": "Status",
+  "name": "status",
+  "fields": [
+    {
+      "label": "Status",
+      "name": "title",
+      "dataType": "string",
+      "displayType": {
+        "list": "string",
+        "show": "string",
+        "create": "string",
+        "edit": "string"
+      }
+    },
+    {
+      "label": "Projects",
+      "name": "projects",
+      "dataType": "reference_many",
+      "dataRefName": "project_x_status",
+      "dataRefEntity": "project",
+      "dataRefField": "title",
+      "displayType": {
+        "list": "none",
+        "show": "string",
+        "create": "string",
+        "edit": "string"
+      }
+    }
+  ]
+}
+```
 
